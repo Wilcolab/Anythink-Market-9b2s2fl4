@@ -36,4 +36,37 @@ The FastAPI server provides the following API routes:
 
 - `POST /tasks`: Adds a task to the task list. The request body should contain the task details.
 
-- `GET /tasks`: Retrieves the task list.
+## Migration to Node.js
+
+This project has been migrated from a Python FastAPI server to a Node.js server. The server now uses Express.js to provide the same task management functionality.
+
+### Updated Project Structure
+
+- `node-server/src/main.js`: Contains the Express.js server implementation with the same two routes for task management.
+
+- `node-server/src/index.js`: Entry point for the Node.js application.
+
+- `node-server/package.json`: Lists the npm dependencies required for the Express.js server.
+
+- `node-server/Dockerfile`: Docker configuration for building and running the Node.js server.
+
+- `docker-compose.yml`: Updated to use the Node.js service instead of the Python service.
+
+### Getting Started with Node.js
+
+To run the Express.js server using Docker:
+
+```shell
+docker compose up
+```
+
+The server will start and be accessible at port `8000`.
+
+### Development
+
+To develop locally without Docker, install dependencies and start the server:
+
+```shell
+npm install
+npm start
+```
