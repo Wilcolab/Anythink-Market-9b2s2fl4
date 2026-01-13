@@ -60,7 +60,7 @@ To run the Express.js server using Docker:
 docker compose up
 ```
 
-The server will start and be accessible at port `8000`.
+The server will start and be accessible at port `8001`.
 
 ### Development
 
